@@ -9,9 +9,9 @@ xhr.onreadystatechange=function (){
     console.log(xhr.readyState)
     if(xhr.readyState ===4){
         let data=JSON.parse(this.responseText);
-        //console.log(data)
-        //console.log(data.avatar_url)
-        //console.log(data.followers)
+        console.log(data)
+        console.log(data.avatar_url)
+        console.log(data.followers)
         let img=document.querySelector('img')
         img.src=data.avatar_url
         let h3=document.querySelector('h3');
